@@ -1,0 +1,90 @@
+{
+	"status": "UP",
+	"details": {
+		"diskSpace": {
+			"status": "UP",
+			"details": {
+				"total": 10726932480,
+				"free": 7393857536,
+				"threshold": 10485760
+			}
+		},
+		"jms": {
+			"status": "UP",
+			"details": {
+				"provider": "ActiveMQ"
+			}
+		},
+		"db": {
+			"status": "UP",
+			"details": {
+				"database": "Microsoft SQL Server",
+				"hello": 1
+			}
+		},
+		"refreshScope": {
+			"status": "UP"
+		},
+		"discoveryComposite": {
+			"status": "UP",
+			"details": {
+				"discoveryClient": {
+					"status": "UP",
+					"details": {
+						"services": [
+							"email-consumer",
+							"email-service",
+							"onboarding-service",
+							"jwtms",
+							"dispatcher-service",
+							"client-service-proxy-hr",
+							"service-discovery",
+							"notification-service",
+							"eventlogger-service",
+							"user-service",
+							"document-service",
+							"transactionrecorder-service",
+							"report-service",
+							"ppadapter",
+							"lookup-service",
+							"person-service",
+							"datasync-service",
+							"timeoff-service",
+							"compensation-service"
+						]
+					}
+				},
+				"eureka": {
+					"description": "Remote status from Eureka server",
+					"status": "UP",
+					"details": {
+						"applications": {
+							"TIMEOFF-SERVICE": 1,
+							"LOOKUP-SERVICE": 1,
+							"EMAIL-CONSUMER": 1,
+							"ONBOARDING-SERVICE": 1,
+							"COMPENSATION-SERVICE": 1,
+							"DATASYNC-SERVICE": 1,
+							"DISPATCHER-SERVICE": 1,
+							"PERSON-SERVICE": 1,
+							"NOTIFICATION-SERVICE": 1,
+							"CLIENT-SERVICE-PROXY-HR": 1,
+							"SERVICE-DISCOVERY": 1,
+							"REPORT-SERVICE": 1,
+							"EVENTLOGGER-SERVICE": 1,
+							"DOCUMENT-SERVICE": 1,
+							"USER-SERVICE": 1,
+							"TRANSACTIONRECORDER-SERVICE": 1,
+							"EMAIL-SERVICE": 1,
+							"JWTMS": 1,
+							"PPADAPTER": 1
+						}
+					}
+				}
+			}
+		},
+		"hystrix": {
+			"status": "UP"
+		}
+	}
+}
